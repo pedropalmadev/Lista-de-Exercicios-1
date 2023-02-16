@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Pedro de Abreu Palma
+
+Ex.4 lista 1 
+
+15/02/2023
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    double custoTotal;
+    int maçasCompradas;
+
+    printf("Número de maças compradas: ");
+    scanf("%d", &maçasCompradas);
+    
+    if(maçasCompradas<12)  {
+        custoTotal = maçasCompradas*1.30;
+        printf("Custo Total = %.2lf",custoTotal);
+        return 0;
+    }
+    else
+        custoTotal = maçasCompradas *1.00;
+        printf("Custo Total = %.2lf",custoTotal);
+        return 0;
+        
+
+}
+
