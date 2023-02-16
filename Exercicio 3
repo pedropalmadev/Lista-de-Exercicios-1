@@ -1,0 +1,31 @@
+/******************************************************************************
+
+Pedro de Abreu Palma 15/02/2023
+
+exercicio 3 lista 01
+
+*******************************************************************************/
+
+#include <stdio.h>  
+
+int main () {
+    
+    //Variaveis
+    
+    int carrosv;
+    float total, salario, valorpcarro, salariofinal;
+    
+    printf("\nNúmero de carros vendidos: ");
+    scanf("%d", &carrosv);
+    printf("\nValor total de vendas: ");
+    scanf("%f", &total);
+    printf("\nValor do salário fixo: ");
+    scanf("%f", &salario);
+    printf("\nValor de comissão por carro: ");
+    scanf("%f", &valorpcarro);
+    
+    salariofinal = salario + carrosv*valorpcarro + 0.05*total;
+    
+    printf("Salário final = %.2f", salariofinal);
+    
+    
