@@ -1,0 +1,36 @@
+/******************************************************************************
+
+Nome: Pedro de Abreu Palma 
+
+Data: 15/02/2023  - Exercicio 6 da Lista 01
+
+Considere o seguinte algoritmo. Realize o teste de mesa para os valores dados e preencha o quadro::
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    
+    int x,y,z;
+        printf("Insira o valor de X e Y: \n");
+        scanf("%d %d",&x, &y);
+        z = (x*y) + 5;
+        printf("z = %d\n",z);
+        if (z <= 0){
+            printf("Resposta = A" );
+            return 0;
+        }
+        if  (z<= 100 && z>0){
+            printf("Resposta = B");
+        }
+        else
+            printf("Resposta = C");
+            
+        return 0;
+    
+    
+    
+
+
+    
+}
