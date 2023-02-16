@@ -1,0 +1,31 @@
+/******************************************************************************
+
+Pedro de Abreu Palma 15/02/2023
+
+Ex.7 Lista 1
+
+Escreva um algoritmo para ler 2 valores e se o segundo valor informado for ZERO, deve ser lido um novo valor,
+ou seja, para o segundo valor não pode ser aceito o valor zero e imprimir o resultado da divisão do primeiro
+valor lido pelo segundo valor lido.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float valorA, valorB, divisao;
+    
+    printf("Digite dois valores: ");
+    scanf("%f %f", &valorA, &valorB);
+    
+    while (valorB == 0) {
+        printf("Valor não permitido, digite novamente: \n");
+        scanf("%f", &valorB);
+    }
+    divisao = valorA / valorB;
+    printf("A divisão resulta em: \n%.1f", divisao);
+ 
+    
+    
+}
+
